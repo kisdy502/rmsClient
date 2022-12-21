@@ -1,0 +1,7 @@
+#redis start
+./bin/redis-server ./redis.conf
+
+
+#开启指定的端口
+firewall-cmd --zone=public --add-port=8089/tcp --permanent
+firewall-cmd --reload

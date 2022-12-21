@@ -1,0 +1,140 @@
+.parent {
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 200px;
+    height: 100%;
+    background-color: #2f3238;
+    overflow: scroll;
+}
+
+.right {
+    flex: 1;
+    float: right;
+    height: 100%;
+    background-color: #2f3238;
+    color: wheat;
+    border-left: 1px solid #ffffe0;
+}
+
+
+.menu-item {
+    color: #ffffe0;
+    vertical-align: middle;
+    height: 48px;
+}
+
+.menu-item:hover {
+    background-color: #121212;
+    cursor: pointer;
+    stroke: #ffffe0;
+}
+
+.menu-item a:active {
+    background-color: #070707;
+}
+
+.menu-item span {
+    vertical-align: middle;
+    line-height: 48px;
+    margin-left: 8px;
+}
+
+.img-icon {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-16px)
+}
+
+
+.div-wrap-img {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 16px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-x: hidden;
+}
+
+
+.sub-div-wrap-img {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 48px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-x: hidden;
+}
+
+.img-sub-icon {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-16px)
+}
+
+.img-tag {
+    width: 16px;
+    height: 16px;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 16px;
+}
+
+.left ul {
+    list-style-type: none;
+    background-color: #333333;
+}
+
+.left li {
+    height: 48px;
+}
+
+.left li:hover {
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.left li a {
+    line-height: 48px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.left li a {
+    color: #C0C0C0;
+}
+
+.left li a:hover {
+    color: #fffffc;
+    text-decoration: underline;
+}
+
+div.collapsed+ul {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    -webkit-transform: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.left ul {
+    max-height: 3000px;
+    transition: max-height 0.5s ease-in;
+    -webkit-transform: max-height 0.5s ease-in;
+}
+
+
+.img-default {
+    filter: drop-shadow(#A0A0A0 16px 0);
+}
+
+.img-light {
+    filter: drop-shadow(#FFFFFF 16px 0);
+}

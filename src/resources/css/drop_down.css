@@ -1,0 +1,75 @@
+.boxes .box1 .select {
+    margin-top: 10px;
+    width: 80%;
+
+}
+
+.boxes .box1 .select p {
+    width: 100%;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px 0;
+}
+
+.boxes .box1 .select ul {
+    width: 100%;
+    max-height: 0px;
+    overflow-y: hidden;
+}
+
+.boxes .box1 .select li {
+
+    background-color: blanchedalmond;
+    padding: 10px;
+    height: 1.5em;
+    list-style: none;
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+
+
+.boxes .box1 .select li:hover {
+    background-color: lightblue;
+}
+
+
+/*给p添加一个伪元素，作为小箭头，小箭头其实是左边框和右边框旋转45度*/
+.boxes .box1 .select p:after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-left: 2px skyblue solid;
+    border-bottom: 2px skyblue solid;
+    transform: rotate(135deg);
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.boxes .box1 .select .active {
+    background-color: lightblue;
+}
+
+/* <!--打开效果 --> */
+.boxes .box1 .select.open ul {
+    max-height: 400px;
+    transition: all 0.3s ease-in;
+}
+
+.boxes .box1 .select.open p:after {
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in;
+}
+
+/* <!--关闭效果--> */
+.boxes .box1 .select.close ul {
+    max-height: 0px;
+    transition: all 0.3s ease-in;
+}
+
+.boxes .box1 .select.close p:after {
+    transform: rotate(135deg);
+    transition: all 0.3s ease-in;
+}

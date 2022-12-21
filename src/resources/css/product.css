@@ -1,0 +1,9 @@
+.product {
+    height: 100%;
+    padding: 20px;
+    background-image: url('../svg/product.svg');
+    float:right;
+}
+h5{
+    text-align: center;
+}

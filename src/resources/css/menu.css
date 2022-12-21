@@ -1,0 +1,30 @@
+.role {
+    height: 100%;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #c0c0c0;
+}
+
+th,
+td {
+    border: 1px solid #d0d0d0;
+    color: #404060;
+    padding: 10px;
+    text-align: center;
+}
+
+.tab-user-list th {
+    background: #e9faff;
+    height: 25px;
+    line-height: 150%;
+}
+
+.tab-user-list td {
+    background: #F8F8F8;
+    height: 25px;
+    line-height: 150%;
+}
